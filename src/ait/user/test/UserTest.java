@@ -51,14 +51,14 @@ class UserTest {
     }
 
     @Test
-    void testAfterLastDotTwoSymbols() {
+    void testAfterLastDotNoSymbols() {
         String invalidEmail = "iryna@gmail.com.";
         user.setEmail(invalidEmail);
         assertEquals(email, user.getEmail());
     }
 
     @Test
-    void testAfterLastDotMoreSymbols() {
+    void testAfterLastDotOneSymbols() {
         String invalidEmail = "iryna@gmail.com.m";
         user.setEmail(invalidEmail);
         assertEquals(email, user.getEmail());
